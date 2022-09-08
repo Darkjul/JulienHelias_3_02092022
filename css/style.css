@@ -1,3 +1,9 @@
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: auto;
+}
+
 header {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
@@ -6,12 +12,6 @@ header {
 
 h1 {
   margin: 0.2%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-  margin: auto;
 }
 
 .ville {
@@ -27,7 +27,6 @@ body {
 .explorestos {
   text-align: center;
 }
-
 .explorestos button {
   color: white;
   font-size: 25px;
