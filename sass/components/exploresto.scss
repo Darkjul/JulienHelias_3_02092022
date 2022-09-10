@@ -1,5 +1,7 @@
 .explorestos {
     text-align: center;
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 15px;
 
     & button {
         color: white;
@@ -10,5 +12,10 @@
         box-shadow: 2px 1px 8px 0px;
         background: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 121, 218, 1));
         margin-top: 16px;
+
+        &:hover {
+            background: linear-gradient(170deg, #ffa2e5, #a978e3);
+            box-shadow: 0 3px 8px darkgray;
+        }
     }
 }
