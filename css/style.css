@@ -12,6 +12,10 @@ main {
   display: flex;
 }
 
+li {
+  list-style: none;
+}
+
 header {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
@@ -20,6 +24,27 @@ header {
 
 h1 {
   margin: 0.2%;
+}
+
+footer {
+  background-color: rgb(65, 62, 62);
+  color: white;
+  padding: 20px 25px 30px;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  margin-bottom: 13px;
+  font-size: 17px;
+}
+footer a {
+  color: white;
+  line-height: 22px;
+}
+footer a i {
+  font-size: 14px;
+  width: 9px;
+  margin-right: 10px;
 }
 
 .ville {
@@ -52,9 +77,6 @@ h1 {
   box-shadow: 0 3px 8px darkgray;
 }
 
-/*button:hover {
-    background: linear-gradient(170deg, #ffa2e5, #a978e3);
-    box-shadow: 0 3px 8px darkgray; }*/
 .etape-globale {
   width: 100%;
 }
