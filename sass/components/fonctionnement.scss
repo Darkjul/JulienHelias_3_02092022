@@ -42,7 +42,7 @@
     margin-bottom: 20px;
 }
 
-.etape-nombre {
+.etape__nombre {
     background-color: #9356DC;
     height: 24px;
     width: 24px;
@@ -52,11 +52,11 @@
     font-size: 15px;
 }
 
-.etape-nombre span {
+.etape__nombre span {
     margin: auto;
 }
 
-.etape-texte {
+.etape__texte {
     position: relative;
     left: -12px;
     background-color: whitesmoke;
@@ -69,18 +69,18 @@
     box-shadow: 0 3px 8px #c2c2c2;
 }
 
-.etape-texte i {
+.etape__texte i {
     width: 21px;
     color: #7D7D7D;
     margin: 0 25px 0 30px;
     font-size: 18px;
 }
 
-.etape-texte:hover {
+.etape__texte:hover {
     background-color: #f4eefc;
 }
 
-.etape-texte:hover i {
+.etape__texte:hover i {
     color: #9356DC;
 }
 
@@ -89,15 +89,15 @@
         width: 80%;
     }
 
-    .etape-nombre {
+    .etape__nombre {
         font-size: 17px;
     }
 
-    .etape-texte {
+    .etape__texte {
         font-size: 18px;
     }
 
-    .etape-texte i {
+    .etape__texte i {
         font-size: 20px;
     }
 }
