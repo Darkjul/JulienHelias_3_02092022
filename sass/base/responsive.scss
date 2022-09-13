@@ -1,0 +1,30 @@
+@media screen and (min-width: 600px) {
+    .etape-globale {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .etape {
+        width: 80%;
+
+        &__nombre {
+            font-size: 17px;
+        }
+
+        &__texte {
+            font-size: 18px;
+        }
+
+        &__texte i {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .etape-globale {
+        flex-direction: row;
+    }
+}

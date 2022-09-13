@@ -1,9 +1,22 @@
 .ville {
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
     background-color: lightgrey;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
+
+    form i {
+        padding-right: 15px;
+    }
+
+    form input {
+        padding: 0px 20px;
+        background-color: lightgrey;
+    }
+
+    ::placeholder {
+        color: black;
+        font-weight: bold;
+    }
 }
