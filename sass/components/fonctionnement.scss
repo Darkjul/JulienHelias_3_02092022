@@ -8,10 +8,10 @@
         margin-bottom: 20px;
 
         &__nombre {
-            background-color: #9356DC;
+            background-color: $couleur-primaire;
             height: 12px;
             width: 12px;
-            color: #fff;
+            color: $couleur-texte-clair;
             border-radius: 50%;
             z-index: 2;
             font-size: 15px;
@@ -21,76 +21,29 @@
         &__texte {
             position: relative;
             left: -12px;
-            background-color: whitesmoke;
+            background-color: $couleur-bg-section;
             border-radius: 17px;
             width: 100%;
             height: 100%;
             align-items: center;
             font-size: 16px;
             font-weight: 600;
-            box-shadow: 0 3px 8px #c2c2c2;
+            box-shadow: 0 3px 8px $couleur-boxshadow;
         }
 
         &__texte i {
             width: 21px;
-            color: #7D7D7D;
+            color: $couleur-icone;
             margin: 0 25px 0 30px;
             font-size: 18px;
         }
 
         &__texte:hover {
-            background-color: #f4eefc;
+            background-color: $couleur-hover-etape;
 
             i {
-                color: #9356DC;
+                color: $couleur-primaire;
             }
         }
     }
 }
-
-
-/*.etape {
-    height: 72px;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 20px;
-
-    &__nombre {
-        background-color: #9356DC;
-        height: 12px;
-        width: 12px;
-        color: #fff;
-        border-radius: 50%;
-        z-index: 2;
-        font-size: 15px;
-        padding: 9px;
-    }
-
-    &__texte {
-        position: relative;
-        left: -12px;
-        background-color: whitesmoke;
-        border-radius: 17px;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        font-size: 16px;
-        font-weight: 600;
-        box-shadow: 0 3px 8px #c2c2c2;
-    }
-
-    &__texte i {
-        width: 21px;
-        color: #7D7D7D;
-        margin: 0 25px 0 30px;
-        font-size: 18px;
-    }
-
-    &__texte:hover {
-        background-color: #f4eefc;
-
-        i {
-            color: #9356DC;
-        }
-    }
-}*/

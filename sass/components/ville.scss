@@ -2,7 +2,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    background-color: lightgrey;
+    background-color: $couleur-bg-ville;
     text-align: center;
     padding: 20px;
 
@@ -12,11 +12,11 @@
 
     form input {
         padding: 0px 20px;
-        background-color: lightgrey;
+        background-color: $couleur-bg-ville;
     }
 
     ::placeholder {
-        color: black;
+        color: $couleur-texte-fonce;
         font-weight: bold;
     }
 }

@@ -1,6 +1,6 @@
 footer {
-    background-color: rgb(65, 62, 62);
-    color: white;
+    background-color: $couleur-footer;
+    color: $couleur-texte-clair;
     padding: 20px 25px 30px;
 
     ul {
@@ -15,7 +15,7 @@ footer {
     }
 
     a {
-        color: white;
+        color: $couleur-texte-clair;
         line-height: 20px;
 
         i {

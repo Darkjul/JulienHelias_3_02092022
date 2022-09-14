@@ -1,5 +1,5 @@
 .restaurant {
-    background-color: rgb(238, 238, 238);
+    background-color: $couleur-bg-section;
     margin-bottom: 20px;
     padding: 15px 10px;
 
@@ -11,10 +11,10 @@
 .resto-list {
     box-sizing: border-box;
     height: 250px;
-    border-radius: 1rem;
+    border-radius: 16px;
     overflow: hidden;
     margin-bottom: 18px;
-    box-shadow: 0 3px 8px #c2c2c2;
+    box-shadow: 0 3px 8px $couleur-boxshadow;
 
     &__image {
         height: 70%;
@@ -30,8 +30,8 @@
             position: absolute;
             right: 12px;
             top: 13px;
-            background-color: #99E2D0;
-            color: #32b091;
+            background-color: $couleur-tertiaire;
+            color: $couleur-texte-bgvert;
             padding: 6px 11px;
             border-radius: 1px;
             font-weight: 500;
@@ -41,7 +41,7 @@
 
     &__description {
         height: 30%;
-        background-color: #fff;
+        background-color: $couleur-bg-carte;
 
         .description-texte {
             flex: 1;
@@ -49,7 +49,7 @@
             flex-direction: column;
             justify-content: center;
             font-size: 17px;
-            color: black;
+            color: $couleur-texte-fonce;
 
             .nom-resto {
                 margin: 0;
