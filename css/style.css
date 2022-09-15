@@ -55,7 +55,7 @@ header h1 {
 }
 
 footer {
-  background-color: rgb(65, 62, 62);
+  background-color: #413e3e;
   color: white;
   padding: 20px 25px 30px;
 }
@@ -115,7 +115,6 @@ footer a i {
 }
 .explorestos button:hover {
   background: linear-gradient(170deg, #9356DC, #FF79DA);
-  /*background: linear-gradient(170deg, #ffa2e5, #a978e3);*/
   box-shadow: 0 3px 8px darkgrey;
 }
 .explorestos h2 {
