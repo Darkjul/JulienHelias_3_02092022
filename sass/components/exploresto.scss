@@ -3,20 +3,8 @@
     background-color: $couleur-bg-section;
     padding-bottom: 15px;
 
-    & button {
-        color: $couleur-texte-clair;
-        font-size: 25px;
-        padding: 16px 32px;
-        border: none;
-        border-radius: 32px;
-        box-shadow: 2px 1px 8px 0px;
-        background: linear-gradient(to top, $couleur-primaire, $couleur-secondaire);
-        margin-top: 16px;
-
-        &:hover {
-            background: linear-gradient(170deg, $couleur-primaire, $couleur-secondaire);
-            box-shadow: 0 3px 8px $couleur-boxshadow;
-        }
+    & {
+        @include bouton-colore;
     }
 
     h2 {

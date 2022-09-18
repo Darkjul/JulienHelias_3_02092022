@@ -7,3 +7,19 @@ header {
         margin: 0.2%;
     }
 }
+
+.header-pages {
+    font-family: "Shrikhand", sans-serif;
+    text-align: center;
+    box-shadow: 0px 5px 5px lightgray;
+
+    h1 {
+        margin: 0.2%;
+    }
+
+    i {
+        display: flex;
+        justify-content: left;
+    }
+
+}

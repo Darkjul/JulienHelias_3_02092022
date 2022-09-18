@@ -65,4 +65,13 @@
 
         }
     }
+
+    .description-coeur {
+        width: 77px;
+        @include transition-coeur;
+
+        .coeur-vide {
+            margin: auto;
+        }
+    }
 }
