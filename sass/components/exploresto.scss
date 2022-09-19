@@ -3,22 +3,6 @@
     background-color: $couleur-bg-section;
     padding-bottom: 15px;
 
-    &.bouton {
-        color: $couleur-texte-clair;
-        font-size: 25px;
-        padding: 16px 32px;
-        border: none;
-        border-radius: 32px;
-        box-shadow: 2px 1px 8px 0px;
-        background: linear-gradient(to top, $couleur-primaire, $couleur-secondaire);
-        margin-top: 16px;
-
-        &:hover {
-            box-shadow: 0 3px 8px $couleur-boxshadow;
-            filter: brightness(1.1);
-        }
-    }
-
     h2 {
         margin: 0;
     }

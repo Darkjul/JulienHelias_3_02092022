@@ -63,8 +63,8 @@ header h1 {
   align-items: center;
 }
 .header-pages a {
-  text-decoration: none;
   margin-left: 10px;
+  color: black;
 }
 .header-pages h1 {
   margin: 0.2%;
@@ -135,20 +135,6 @@ footer a i {
   text-align: center;
   background-color: #f6f6f6;
   padding-bottom: 15px;
-}
-.explorestos.bouton {
-  color: white;
-  font-size: 25px;
-  padding: 16px 32px;
-  border: none;
-  border-radius: 32px;
-  box-shadow: 2px 1px 8px 0px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  margin-top: 16px;
-}
-.explorestos.bouton:hover {
-  box-shadow: 0 3px 8px darkgrey;
-  filter: brightness(1.1);
 }
 .explorestos h2 {
   margin: 0;
@@ -288,20 +274,6 @@ footer a i {
   text-align: center;
   background-color: #f6f6f6;
   padding-bottom: 15px;
-}
-.page-resto .bouton {
-  color: white;
-  font-size: 25px;
-  padding: 16px 32px;
-  border: none;
-  border-radius: 32px;
-  box-shadow: 2px 1px 8px 0px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  margin-top: 16px;
-}
-.page-resto .bouton:hover {
-  box-shadow: 0 3px 8px darkgrey;
-  filter: brightness(1.1);
 }
 
 .pic-resto img {
