@@ -42,6 +42,7 @@
     &__description {
         height: 30%;
         background-color: $couleur-bg-carte;
+        align-items: center;
 
         .description-texte {
             flex: 1;
@@ -66,12 +67,5 @@
         }
     }
 
-    .description-coeur {
-        width: 77px;
-        @include transition-coeur;
 
-        .coeur-vide {
-            margin: auto;
-        }
-    }
 }

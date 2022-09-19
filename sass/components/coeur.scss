@@ -1,0 +1,29 @@
+.description-coeur {
+    width: 75px;
+
+
+    .coeur-vide {
+        margin: auto;
+        transition: all 1s;
+    }
+
+    .coeur-plein {
+
+        background: linear-gradient(170deg, $couleur-primaire, $couleur-secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &:hover {
+        .coeur-vide {
+            opacity: 0;
+        }
+
+        .coeur-plein {
+            opacity: 1;
+        }
+    }
+}

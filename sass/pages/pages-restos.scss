@@ -1,9 +1,10 @@
-.explorestos {
+.page-resto {
     text-align: center;
     background-color: $couleur-bg-section;
     padding-bottom: 15px;
 
-    &.bouton {
+
+    .bouton {
         color: $couleur-texte-clair;
         font-size: 25px;
         padding: 16px 32px;
@@ -18,8 +19,8 @@
             filter: brightness(1.1);
         }
     }
+}
 
-    h2 {
-        margin: 0;
-    }
+.pic-resto img {
+    height: 250px;
 }

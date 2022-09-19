@@ -1,10 +1,16 @@
 @import "utils/variables.scss";
-@import "utils/mixins.scss";
 @import "utils/responsive.scss";
+
 @import "base/base.scss";
+
 @import "layouts/header.scss";
 @import "layouts/footer.scss";
+
 @import "components/ville.scss";
+@import "components/bouton.scss";
 @import "components/exploresto.scss";
 @import "components/fonctionnement.scss";
 @import "components/restaurant.scss";
+@import "components/coeur.scss";
+
+@import "pages/pages-restos.scss";
