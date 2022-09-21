@@ -340,17 +340,6 @@ footer a i {
   transform: translateX(-70px);
 }
 
-/*.plat:hover .plat__animation {
-    transform: scaleX(1);
-}
-
-.plat:hover .icone_anime {
-    transform: rotate(360deg);
-}
-
-.plat:hover .plat__prix {
-    transform: translateX(-70px);
-}*/
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -367,7 +356,7 @@ body h2 {
   padding: 15px;
 }
 .page-resto .pic-resto img {
-  height: 350px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
 }
