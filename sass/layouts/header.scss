@@ -1,7 +1,7 @@
 header {
     font-family: "Shrikhand", sans-serif;
     text-align: center;
-    box-shadow: 0px 5px 5px lightgray;
+    box-shadow: 0px 5px 5px $couleur-boxshadow-header;
 
     h1 {
         margin: 0.2%;
@@ -11,7 +11,7 @@ header {
 .header-pages {
     font-family: "Shrikhand", sans-serif;
     text-align: center;
-    box-shadow: 0px 5px 5px lightgray;
+    box-shadow: 0px 5px 5px $couleur-boxshadow-header;
     display: flex;
     justify-content: center;
     align-items: center;

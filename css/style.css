@@ -48,7 +48,7 @@ a {
 header {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
-  box-shadow: 0px 5px 5px lightgray;
+  box-shadow: 0px 5px 5px lightgrey;
 }
 header h1 {
   margin: 0.2%;
@@ -57,7 +57,7 @@ header h1 {
 .header-pages {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
-  box-shadow: 0px 5px 5px lightgray;
+  box-shadow: 0px 5px 5px lightgrey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,14 +270,122 @@ footer a i {
   opacity: 1;
 }
 
+.plat {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: 14px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px darkgrey;
+  padding: 0;
+  position: relative;
+}
+.plat__texte {
+  align-self: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 80%;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: width 300ms 100ms linear;
+  padding: 13px 0 13px 12px;
+  justify-content: space-between;
+}
+.plat__texte .nom-plat {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.plat__texte p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+.plat__prix {
+  align-self: flex-end;
+  color: black;
+  font-weight: 700;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  transform-origin: right;
+  transition: transform 250ms 100ms linear;
+}
+.plat__animation {
+  display: flex;
+  background-color: #99E2D0;
+  width: 72px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 250ms 100ms linear;
+}
+.plat__animation .icone_anime {
+  color: white;
+  font-size: 25px;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: transform 250ms 100ms linear;
+}
+
+.plat:hover {
+  cursor: pointer;
+}
+.plat:hover .plat__animation {
+  transform: scaleX(1);
+}
+.plat:hover .icone_anime {
+  transform: rotate(360deg);
+}
+.plat:hover .plat__prix {
+  transform: translateX(-70px);
+}
+
+/*.plat:hover .plat__animation {
+    transform: scaleX(1);
+}
+
+.plat:hover .icone_anime {
+    transform: rotate(360deg);
+}
+
+.plat:hover .plat__prix {
+    transform: translateX(-70px);
+}*/
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: auto;
+}
+body h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
+}
+
 .page-resto {
   text-align: center;
   background-color: #f6f6f6;
-  padding-bottom: 15px;
+  padding: 15px;
 }
-
-.pic-resto img {
-  height: 250px;
+.page-resto .pic-resto img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+.page-resto .nom-resto {
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-resto .nom-resto p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+}
+.page-resto .sous-menu h3 {
+  display: flex;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

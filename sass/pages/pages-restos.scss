@@ -1,10 +1,45 @@
-.page-resto {
-    text-align: center;
-    background-color: $couleur-bg-section;
-    padding-bottom: 15px;
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+
+    h2 {
+        font-family: "Shrikhand", sans-serif;
+        font-weight: 300;
+    }
 
 }
 
-.pic-resto img {
-    height: 250px;
+.page-resto {
+    text-align: center;
+    background-color: $couleur-bg-section;
+    padding: 15px;
+
+    .pic-resto img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .nom-resto {
+        margin: 0;
+        font-weight: 700;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
+    }
+
+    .sous-menu h3 {
+        display: flex;
+        margin-left: 10px;
+    }
+
 }

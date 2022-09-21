@@ -1,0 +1,79 @@
+.plat {
+    display: flex;
+    justify-content: space-between;
+    background-color: $couleur-bg-carte;
+    margin-top: 14px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px $couleur-boxshadow;
+    padding: 0;
+    position: relative;
+
+    &__texte {
+        align-self: flex-start;
+        flex-direction: column;
+        text-align: left;
+        width: 80%;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: width 300ms 100ms linear;
+        padding: 13px 0 13px 12px;
+        justify-content: space-between;
+
+        .nom-plat {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 300;
+            font-size: 15px;
+        }
+    }
+
+    &__prix {
+        align-self: flex-end;
+        color: $couleur-texte-fonce;
+        font-weight: 700;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        transform-origin: right;
+        transition: transform 250ms 100ms linear;
+    }
+
+    &__animation {
+        display: flex;
+        background-color: $couleur-tertiaire;
+        width: 72px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 250ms 100ms linear;
+
+        .icone_anime {
+            color: $couleur-bg-carte;
+            font-size: 25px;
+            margin: auto;
+            transform: rotate(0deg);
+            transition: transform 250ms 100ms linear;
+        }
+    }
+}
+
+
+.plat:hover {
+    cursor: pointer;
+
+    .plat__animation {
+        transform: scaleX(1);
+    }
+
+    .icone_anime {
+        transform: rotate(360deg);
+    }
+
+    .plat__prix {
+        transform: translateX(-70px);
+    }
+}
