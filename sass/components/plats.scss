@@ -23,12 +23,15 @@
             font-weight: 600;
             font-size: 16px;
             margin-bottom: 5px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         p {
             margin: 0;
             font-weight: 300;
             font-size: 15px;
+            text-overflow: ellipsis;
         }
     }
 
@@ -59,21 +62,37 @@
             transition: transform 250ms 100ms linear;
         }
     }
-}
 
+    &:hover {
+        cursor: pointer;
 
-.plat:hover {
-    cursor: pointer;
+        .plat__animation {
+            transform: scaleX(1);
+        }
 
-    .plat__animation {
-        transform: scaleX(1);
-    }
+        .icone_anime {
+            transform: rotate(360deg);
+        }
 
-    .icone_anime {
-        transform: rotate(360deg);
-    }
+        .plat__prix {
+            transform: translateX(-70px);
+        }
 
-    .plat__prix {
-        transform: translateX(-70px);
+        .plat__texte {
+
+            .nom-plat {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                width: 70%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
     }
 }

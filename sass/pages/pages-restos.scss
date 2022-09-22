@@ -6,6 +6,7 @@ body {
     h2 {
         font-family: "Shrikhand", sans-serif;
         font-weight: 300;
+
     }
 
 }
@@ -39,7 +40,18 @@ body {
 
     .sous-menu h3 {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin-left: 10px;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 35px;
+            background-color: $couleur-tertiaire;
+            margin-top: 5px;
+        }
     }
 
 }
