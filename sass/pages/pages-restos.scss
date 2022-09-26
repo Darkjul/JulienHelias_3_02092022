@@ -6,6 +6,7 @@ body {
     h2 {
         font-family: "Shrikhand", sans-serif;
         font-weight: 300;
+        margin: 15px;
 
     }
 
@@ -14,7 +15,6 @@ body {
 .page-resto {
     text-align: center;
     background-color: $couleur-bg-section;
-    padding: 15px;
 
     .pic-resto img {
         height: 250px;
@@ -24,11 +24,15 @@ body {
     }
 
     .nom-resto {
-        margin: 0;
+        margin: 0px;
+        margin-top: -40px;
+        position: relative;
         font-weight: 700;
         margin-bottom: 5px;
         align-items: center;
         justify-content: space-between;
+        background-color: $couleur-bg-section;
+        border-radius: 40px 40px 0 0;
 
         p {
             margin: 0;
@@ -36,22 +40,28 @@ body {
             font-size: 16px;
         }
 
+
     }
 
-    .sous-menu h3 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 10px;
+    .sous-menu {
 
-        &::after {
-            content: "";
-            display: block;
-            height: 3px;
-            width: 35px;
-            background-color: $couleur-tertiaire;
-            margin-top: 5px;
+        padding: 0 10px 0 10px;
+
+        h3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 10px;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 3px;
+                width: 35px;
+                background-color: $couleur-tertiaire;
+                margin-top: 5px;
+            }
         }
-    }
 
+    }
 }

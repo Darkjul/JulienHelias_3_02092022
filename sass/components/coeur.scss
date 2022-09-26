@@ -4,8 +4,11 @@
 
     .coeur-vide {
         margin: auto;
-        transition: all 1s;
+        transition: opacity 1s;
+        color: $couleur-texte-fonce;
+
     }
+
 
     .coeur-plein {
 
@@ -14,7 +17,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         opacity: 0;
-        transition: all 1s;
+        transition: opacity 1s;
+
     }
 
     &:hover {
