@@ -137,7 +137,7 @@ footer a i {
 .loader-page .load {
   transform: scale(0);
   font-size: 130px;
-  color: #FF79DA;
+  color: #36927b;
   margin: auto;
   animation: chargement-loader 3s 150ms linear backwards;
 }

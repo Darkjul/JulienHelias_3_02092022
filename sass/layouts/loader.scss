@@ -9,7 +9,7 @@
     .load {
         transform: scale(0);
         font-size: 130px;
-        color: $couleur-secondaire;
+        color: $couleur-texte-bgvert;
         margin: auto;
         animation: chargement-loader 3s 150ms linear backwards;
     }
