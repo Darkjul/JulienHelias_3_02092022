@@ -1,0 +1,16 @@
+.loader-page {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    transform: scale(0);
+    background-color: rgba($couleur-boxshadow-header, 0.5);
+    animation: chargement-background 3s 150ms backwards;
+
+    .load {
+        transform: scale(0);
+        font-size: 130px;
+        color: $couleur-secondaire;
+        margin: auto;
+        animation: chargement-loader 3s 150ms linear backwards;
+    }
+}

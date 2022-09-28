@@ -13,3 +13,29 @@
         opacity: 1;
     }
 }
+
+
+@keyframes chargement-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        opacity: .75;
+    }
+
+    100% {
+        transform: rotate(3turn);
+        opacity: 0;
+    }
+}
+
+@keyframes chargement-background {
+
+    0%,
+    100% {
+        transform: scale(1);
+        height: 100%;
+        width: 100%;
+    }
+}
