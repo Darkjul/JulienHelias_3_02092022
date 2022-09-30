@@ -69,3 +69,55 @@
 
 
 }
+
+@media screen and (min-width: 600px) {
+    .restaurant {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+        .restaurants-carte {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+
+            .resto-list {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .restaurant h2::before,
+    .restaurant h2::after {
+        content: "";
+        display: inline-block;
+        background-color: $couleur-texte-bgvert;
+        height: 2px;
+        width: 75px;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .resto-list {
+        height: 350px;
+
+
+        &__image {
+            height: 75%;
+        }
+
+        &__description {
+            height: 25%;
+        }
+    }
+}

@@ -3,20 +3,13 @@ body {
     box-sizing: border-box;
     margin: auto;
 
-    h2 {
-        font-family: "Shrikhand", sans-serif;
-        font-weight: 300;
-        margin: 15px;
-
-    }
-
 }
 
 .page-resto {
     text-align: center;
     background-color: $couleur-bg-section;
 
-    .pic-resto img {
+    .img-resto img {
         height: 250px;
         width: 100%;
         object-fit: cover;
@@ -33,6 +26,13 @@ body {
         justify-content: space-between;
         background-color: $couleur-bg-section;
         border-radius: 40px 40px 0 0;
+
+        h2 {
+            font-family: "Shrikhand", sans-serif;
+            font-weight: 300;
+            margin: 15px;
+
+        }
 
         p {
             margin: 0;
@@ -62,6 +62,15 @@ body {
                 margin-top: 5px;
             }
         }
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page-resto .img-resto img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
 
     }
 }

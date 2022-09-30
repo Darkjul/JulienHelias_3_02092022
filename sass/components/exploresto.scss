@@ -1,9 +1,16 @@
 .explorestos {
     text-align: center;
     background-color: $couleur-bg-section;
-    padding-bottom: 15px;
+    padding: 20px 0 20px 0;
+
 
     h2 {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .explorestos {
+        font-size: 18px;
     }
 }

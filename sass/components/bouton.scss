@@ -31,3 +31,9 @@
         filter: brightness(1.1);
     }
 }
+
+@media screen and (min-width: 600px) {
+    .boutonR {
+        transform: scale(1.3);
+    }
+}

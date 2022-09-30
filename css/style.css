@@ -1,32 +1,3 @@
-@media screen and (min-width: 600px) {
-  .etape-globale {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .etape {
-    width: 80%;
-  }
-  .etape__nombre {
-    font-size: 17px;
-  }
-  .etape__texte {
-    font-size: 18px;
-  }
-  .etape__texte i {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .etape-globale {
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 600px) {
-  .boutonR {
-    transform: scale(1.3);
-  }
-}
 @keyframes chargement-menu {
   0% {
     transform: translateY(25px);
@@ -77,7 +48,7 @@ a {
   text-decoration: none;
 }
 
-.operation {
+.fonctionnement {
   margin: 0px 10px;
 }
 
@@ -107,6 +78,11 @@ header h1 {
   flex-grow: 1;
 }
 
+@media screen and (min-width: 600px) {
+  header h1 {
+    font-size: 50px;
+  }
+}
 footer {
   background-color: #413e3e;
   color: white;
@@ -131,6 +107,17 @@ footer a i {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 600px) {
+  footer h3 {
+    font-size: 20px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  footer a i {
+    font-size: 16px;
+  }
+}
 .loader-page {
   display: flex;
   position: fixed;
@@ -168,6 +155,14 @@ footer a i {
   font-weight: bold;
 }
 
+@media screen and (min-width: 600px) {
+  .ville {
+    font-size: 18px;
+  }
+  .ville form input {
+    font-size: 20px;
+  }
+}
 .bouton {
   color: white;
   font-size: 25px;
@@ -200,15 +195,25 @@ footer a i {
   filter: brightness(1.1);
 }
 
+@media screen and (min-width: 600px) {
+  .boutonR {
+    transform: scale(1.3);
+  }
+}
 .explorestos {
   text-align: center;
   background-color: #f6f6f6;
-  padding-bottom: 15px;
+  padding: 20px 0 20px 0;
 }
 .explorestos h2 {
   margin: 0;
 }
 
+@media screen and (min-width: 600px) {
+  .explorestos {
+    font-size: 18px;
+  }
+}
 .etape-globale {
   width: 100%;
 }
@@ -256,6 +261,54 @@ footer a i {
   color: #9356DC;
 }
 
+@media screen and (min-width: 600px) {
+  .etape-globale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .etape {
+    width: 80%;
+  }
+  .etape__nombre {
+    font-size: 17px;
+  }
+  .etape__texte {
+    font-size: 18px;
+  }
+  .etape__texte i {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 45px;
+  }
+  .fonctionnement h2 {
+    font-size: 30px;
+  }
+  .fonctionnement h2::before,
+.fonctionnement h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #36927b;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .etape-globale {
+    flex-direction: row;
+  }
+  .etape__texte {
+    justify-content: center;
+  }
+}
 .restaurant {
   background-color: #f6f6f6;
   margin-bottom: 20px;
@@ -317,6 +370,48 @@ footer a i {
   font-size: 16px;
 }
 
+@media screen and (min-width: 600px) {
+  .restaurant {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .restaurant .restaurants-carte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .restaurant .restaurants-carte .resto-list {
+    width: 100%;
+  }
+  .restaurant h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .restaurant h2::before,
+.restaurant h2::after {
+    content: "";
+    display: inline-block;
+    background-color: #36927b;
+    height: 2px;
+    width: 75px;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .resto-list {
+    height: 350px;
+  }
+  .resto-list__image {
+    height: 75%;
+  }
+  .resto-list__description {
+    height: 25%;
+  }
+}
 .description-coeur {
   width: 75px;
 }
@@ -445,17 +540,12 @@ body {
   box-sizing: border-box;
   margin: auto;
 }
-body h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 300;
-  margin: 15px;
-}
 
 .page-resto {
   text-align: center;
   background-color: #f6f6f6;
 }
-.page-resto .pic-resto img {
+.page-resto .img-resto img {
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -470,6 +560,11 @@ body h2 {
   justify-content: space-between;
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
+}
+.page-resto .nom-resto h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
+  margin: 15px;
 }
 .page-resto .nom-resto p {
   margin: 0;
@@ -492,6 +587,14 @@ body h2 {
   width: 35px;
   background-color: #99E2D0;
   margin-top: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-resto .img-resto img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
