@@ -295,8 +295,8 @@ footer a i {
     content: "";
     display: inline-block;
     background-color: #36927b;
-    height: 2px;
-    width: 75px;
+    height: 4px;
+    width: 80px;
     vertical-align: middle;
     margin: 0 10px;
   }
@@ -395,8 +395,8 @@ footer a i {
     content: "";
     display: inline-block;
     background-color: #36927b;
-    height: 2px;
-    width: 75px;
+    height: 4px;
+    width: 80px;
     vertical-align: middle;
     margin: 0 10px;
   }
