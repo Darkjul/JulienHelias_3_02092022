@@ -6,24 +6,24 @@
     border-radius: 16px;
     box-shadow: 0 3px 10px $couleur-boxshadow;
     padding: 0;
-    position: relative;
     opacity: 0;
+    overflow: hidden;
 
     &__texte {
         align-self: flex-start;
         flex-direction: column;
         text-align: left;
         width: 80%;
-        transform: scaleX(1);
         transform-origin: left;
         transition: width 300ms 100ms linear;
-        padding: 13px 0 13px 12px;
+        padding: 15px 0 15px 13px;
         justify-content: space-between;
 
         .nom-plat {
             font-weight: 600;
             font-size: 16px;
             margin-bottom: 5px;
+            margin: 0;
             white-space: nowrap;
             text-overflow: ellipsis;
         }
@@ -39,23 +39,19 @@
     }
 
     &__prix {
-        align-self: flex-end;
+        align-self: center;
         color: $couleur-texte-fonce;
         font-weight: 700;
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
-        transform-origin: right;
-        transition: transform 250ms 100ms linear;
+        width: 20%;
+
     }
 
     &__animation {
         display: flex;
         background-color: $couleur-tertiaire;
-        width: 72px;
+        width: 0%;
         transform-origin: right;
-        transform: scaleX(0);
-        transition: transform 250ms 100ms linear;
+        transition: width 250ms 100ms linear;
         border-radius: 0 16px 16px 0;
 
         .icone_anime {
@@ -71,7 +67,7 @@
         cursor: pointer;
 
         .plat__animation {
-            transform: scaleX(1);
+            width: 20%;
         }
 
 
@@ -79,9 +75,8 @@
             transform: rotate(360deg);
         }
 
-        .plat__prix {
-            transform: translateX(-70px);
-            transition: transform 250ms 100ms linear;
+        .plat__texte {
+            width: 60%;
         }
 
 
@@ -92,7 +87,6 @@
         }
 
         p {
-            width: 70%;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;

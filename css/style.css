@@ -443,24 +443,24 @@ footer a i {
   border-radius: 16px;
   box-shadow: 0 3px 10px darkgrey;
   padding: 0;
-  position: relative;
   opacity: 0;
+  overflow: hidden;
 }
 .plat__texte {
   align-self: flex-start;
   flex-direction: column;
   text-align: left;
   width: 80%;
-  transform: scaleX(1);
   transform-origin: left;
   transition: width 300ms 100ms linear;
-  padding: 13px 0 13px 12px;
+  padding: 15px 0 15px 13px;
   justify-content: space-between;
 }
 .plat__texte .nom-plat {
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 5px;
+  margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -473,22 +473,17 @@ footer a i {
   overflow: hidden;
 }
 .plat__prix {
-  align-self: flex-end;
+  align-self: center;
   color: black;
   font-weight: 700;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  transform-origin: right;
-  transition: transform 250ms 100ms linear;
+  width: 20%;
 }
 .plat__animation {
   display: flex;
   background-color: #99E2D0;
-  width: 72px;
+  width: 0%;
   transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 250ms 100ms linear;
+  transition: width 250ms 100ms linear;
   border-radius: 0 16px 16px 0;
 }
 .plat__animation .icone_anime {
@@ -502,14 +497,13 @@ footer a i {
   cursor: pointer;
 }
 .plat:hover .plat__animation {
-  transform: scaleX(1);
+  width: 20%;
 }
 .plat:hover .icone_anime {
   transform: rotate(360deg);
 }
-.plat:hover .plat__prix {
-  transform: translateX(-70px);
-  transition: transform 250ms 100ms linear;
+.plat:hover .plat__texte {
+  width: 60%;
 }
 .plat:hover .nom-plat {
   overflow: hidden;
@@ -517,7 +511,6 @@ footer a i {
   text-overflow: ellipsis;
 }
 .plat:hover p {
-  width: 70%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -570,6 +563,9 @@ body {
   margin: 0;
   font-weight: 300;
   font-size: 16px;
+}
+.page-resto .nom-resto .description-coeur {
+  right: 20px;
 }
 .page-resto .sous-menu {
   padding: 0 10px 0 10px;
