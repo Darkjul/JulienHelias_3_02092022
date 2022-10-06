@@ -63,7 +63,7 @@
         }
     }
 
-    &:hover {
+    &:active {
         cursor: pointer;
 
         .plat__animation {
@@ -96,6 +96,38 @@
     @for $i from 1 through ($plat-max) {
         &:nth-of-type(#{$i}) {
             animation: chargement-menu 1s $menu-delais*$i forwards;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .plat {
+
+        &__prix {
+            display: flex;
+            align-self: center;
+            justify-content: flex-end;
+            padding: 0 20px 0 0;
+
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .plat__animation {
+                width: 20%;
+            }
+
+
+            .icone_anime {
+                transform: rotate(360deg);
+            }
+
+            .plat__texte {
+                width: 60%;
+            }
+
         }
     }
 

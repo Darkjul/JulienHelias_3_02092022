@@ -428,13 +428,21 @@ footer a i {
   opacity: 0;
   transition: opacity 1s;
 }
-.description-coeur:hover .coeur-vide {
+.description-coeur:active .coeur-vide {
   opacity: 0;
 }
-.description-coeur:hover .coeur-plein {
+.description-coeur:active .coeur-plein {
   opacity: 1;
 }
 
+@media screen and (min-width: 1024px) {
+  .description-coeur:hover .coeur-vide {
+    opacity: 0;
+  }
+  .description-coeur:hover .coeur-plein {
+    opacity: 1;
+  }
+}
 .plat {
   display: flex;
   justify-content: space-between;
@@ -493,24 +501,24 @@ footer a i {
   transform: rotate(0deg);
   transition: transform 250ms 100ms linear;
 }
-.plat:hover {
+.plat:active {
   cursor: pointer;
 }
-.plat:hover .plat__animation {
+.plat:active .plat__animation {
   width: 20%;
 }
-.plat:hover .icone_anime {
+.plat:active .icone_anime {
   transform: rotate(360deg);
 }
-.plat:hover .plat__texte {
+.plat:active .plat__texte {
   width: 60%;
 }
-.plat:hover .nom-plat {
+.plat:active .nom-plat {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.plat:hover p {
+.plat:active p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -528,6 +536,37 @@ footer a i {
   animation: chargement-menu 1s 0.8s forwards;
 }
 
+@media screen and (min-width: 1024px) {
+  .plat__prix {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
+  }
+  .plat:hover {
+    cursor: pointer;
+    /* .nom-plat {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }*/
+  }
+  .plat:hover .plat__animation {
+    width: 20%;
+  }
+  .plat:hover .icone_anime {
+    transform: rotate(360deg);
+  }
+  .plat:hover .plat__texte {
+    width: 60%;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
