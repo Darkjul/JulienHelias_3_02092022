@@ -22,6 +22,8 @@
     }
 
     &:active {
+        cursor: pointer;
+
         .coeur-vide {
             opacity: 0;
         }
@@ -37,6 +39,8 @@
     .description-coeur {
 
         &:hover {
+            cursor: pointer;
+
             .coeur-vide {
                 opacity: 0;
             }
